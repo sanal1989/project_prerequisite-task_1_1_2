@@ -1,15 +1,15 @@
 package jm.task.core.jdbc;
 
-import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
 import jm.task.core.jdbc.model.User;
+import jm.task.core.jdbc.service.UserService;
 import jm.task.core.jdbc.service.UserServiceImpl;
 
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        // implement algorithm here
-        UserServiceImpl userService = new UserServiceImpl();
+
+        UserService userService = new UserServiceImpl();
         userService.createUsersTable();
         userService.createUsersTable();
         userService.saveUser("name1", "lastName1", (byte) 10);

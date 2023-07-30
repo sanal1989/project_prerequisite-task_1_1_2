@@ -2,11 +2,11 @@ package jm.task.core.jdbc.util;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 
-import javax.sql.DataSource;
-import java.sql.DriverManager;
-
 public class Util {
-    // set up a database connection
+
+    private Util() {
+    }
+
     private static MysqlDataSource mysqlDataSource;
 
     static {
